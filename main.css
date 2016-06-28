@@ -10,11 +10,18 @@ div {
   border-bottom-color: transparent; /* and the bottom of the circle */
 }
 
+/*Decided to use the child selector for every other color in the rainbow
+  This way I could test it out */
+
+/* labeled red directly */
 #red
 {
   border-top-color: #ff0000;
 }
 
+/* selected direct child for orange,
+not a descendant selector, which would get all
+divs under #red */
 #red > div
 {
   border-top-color: #ffa500;
@@ -24,7 +31,9 @@ div {
 {
   border-top-color: #ffff00;
 }
-
+/* selected direct child for green,
+not a descendant selector, which would get all
+divs under #yellow, etc */
 #yellow > div
 {
   border-top-color: #00bc3f;
